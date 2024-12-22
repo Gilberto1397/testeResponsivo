@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #22D4FD;
+}
+
+/*Cabeçalho*/
+
+.cabecalho {
+    padding: 3.4% 13%;
+    margin-bottom: 4%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__item {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.cabecalho__menu__item:hover {
+    color: #008cff;
+    transform: scale(1.15);
+}
+
+/*conteudo principal*/
+
+body {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3.5% 0 7.5% 0;
+    padding: 0 13%;
+}
+
+.principal__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 40px;
+    width: 36%;
+}
+
+.principal__conteudo__titulo {
+    color: rgb(246, 246, 246);
+    font-size: 2.25rem;
+    font-family: "Krona One", serif;
+    font-weight: 400;
+}
+
+.principal__conteudo__titulo--destacado {
+    color: rgb(34, 212, 253);
+}
+
+.principal__conteudo__paragrafo {
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(246, 246, 246);
+}
+
+.principal__conteudo__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.principal__conteudo__buttons__title {
+    font-size: 1.5rem;
+    font-family: "Krona One", serif;
+}
+
+.principal__conteudo__buttons__buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: black;
+    color: #F6F6F6;
+    text-decoration: none;
+    padding: 21.5px 0;
+    width: 73.6%;
+    border-radius: 8px;
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    border: 1px #F6F6F6 solid;
+    transition: all 0.7s;
+}
+
+.principal__conteudo__buttons__buttom:hover {
+    background-color: #272727;
+    width: 80%;
+}
+
+/*Rodape*/
+
+.rodape {
+    background-color: #22D4FD;
+    padding: 28px 0;
+    color: black;
+}
+
+.rodape__titulo {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Media query */
+@media (max-width: 1200px) {
+    .principal {
+        flex-direction: column-reverse;
+        gap: 80px;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .principal__conteudo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .principal {
+        padding: 0 5%;
+        margin: 0 0 7.2% 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 11.6% 13% 10.8% 13%;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .principal__conteudo {
+        width: 95%;
+    }
+
+    .cabecalho__menu__item {
+        font-size: 1.2rem;
+    }
+
+    .principal__conteudo__titulo {
+        font-size: 1.5rem;
+    }
+
+    .principal__conteudo__paragrafo {
+        font-size: 1.2rem;
+    }
+
+    .principal__conteudo__buttons__title {
+        font-size: 1.2rem;
+    }
+
+    .principal__conteudo__buttons__buttom {
+        font-size: 1.2rem;
+    }
+
+    .rodape__titulo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .principal__conteudo__buttons__buttom {
+        width: 70%;
+    }
+}
+
+/*FALTA O PADDING E SOBRE MIM E ARRUMAR A IMAGEM*/
