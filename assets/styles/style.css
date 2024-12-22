@@ -72,6 +72,10 @@ body {
     color: rgb(246, 246, 246);
 }
 
+.principal__lateral__imagem {
+    width: 90%;
+}
+
 .principal__conteudo__buttons {
     display: flex;
     flex-direction: column;
